@@ -200,7 +200,43 @@ select {
 }
 
 /*==========================================================================*/
+.menu-bar-content ul li {
+    position: relative;
+}
 
+.submenu {
+    position: absolute;
+    background-color: #ddd;
+    width: 250px;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 12px;
+    z-index: 1;
+}
+
+.submenu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu ul li {
+    padding: 6px 0;
+}
+
+.submenu ul li:hover {
+    background: none;
+}
+
+.submenu ul li:hover a {
+    color: #FFF200;
+}
+
+.menu-bar-content ul li:hover .submenu {
+    display: block;
+}
+
+/*==========================================================================*/
 .slider {
     padding: 20px 0;
     height: 350px;
